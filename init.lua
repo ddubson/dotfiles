@@ -43,8 +43,6 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -200,11 +198,6 @@ require('lazy').setup({
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
 }, {})
-
-vim.cmd.colorscheme = "catppuccin"
-require("catppuccin").setup({
-  flavour = "frappe"
-})
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
