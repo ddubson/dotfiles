@@ -2,6 +2,8 @@
 
 ## NeoVim
 
+NeoVim can be configured with config files symlinked like so:
+
 ```
 ln -s <root-dir>/init.lua $HOME/.config/nvim/
 ln -s <root-dir/lua/ $HOME/.config/nvim/
