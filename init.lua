@@ -39,7 +39,7 @@ require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
-
+  'nvim-tree/nvim-tree.lua',
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- Detect tabstop and shiftwidth automatically
@@ -199,6 +199,12 @@ vim.cmd.colorscheme "catppuccin-frappe"
 
 require("catppuccin").setup({
 			flavour = "frappe"
+})
+
+require("nvim-tree").setup({
+	renderer = {
+			group_empty = true
+	}
 })
 
 -- Set highlight on search
