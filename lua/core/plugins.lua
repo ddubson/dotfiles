@@ -18,9 +18,15 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
 
+  -- Code auto-completions
+  use { 'neoclide/coc.nvim', branch = 'release' }
+
+  -- Mason (LSP)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
+
+  -- Treesitter (code highlighting)
   use 'nvim-treesitter/nvim-treesitter'
 
   -- Telescope related plugins
