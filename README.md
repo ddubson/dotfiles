@@ -2,7 +2,12 @@
 
 ## NeoVim
 
+### Requirements
+
 Install NeoVim first on your machine.
+
+* eslint_d + xo (`npm i -g eslint_d xo`)
+* eslint (`npm init @eslint/config`) -- when working in a js/ts project.
 
 NeoVim can be configured with config files symlinked like so:
 

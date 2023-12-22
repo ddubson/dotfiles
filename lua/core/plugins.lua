@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
   -- Code auto-completions
   use { 'neoclide/coc.nvim', branch = 'release' }
 
+  -- non-LSP stuff
+  use 'nvimtools/none-ls.nvim'
+
   -- Mason (LSP)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
@@ -28,6 +31,12 @@ return require('packer').startup(function(use)
 
   -- Treesitter (code highlighting)
   use 'nvim-treesitter/nvim-treesitter'
+
+  -- Surround
+  use {
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+  }
 
   -- Telescope related plugins
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { { 'nvim-lua/plenary.nvim' } } }
