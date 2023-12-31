@@ -32,6 +32,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+
   -- nvim-cmp pairing with LuaSnip
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
@@ -44,6 +45,10 @@ return require('packer').startup(function(use)
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
   }
+
+  -- Auto completing tags
+  use 'windwp/nvim-ts-autotag'
+  use 'windwp/nvim-autopairs'
 
   -- Telescope related plugins
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { { 'nvim-lua/plenary.nvim' } } }
