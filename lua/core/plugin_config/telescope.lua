@@ -8,6 +8,9 @@ vim.keymap.set('n', '<Space>fh', builtin.help_tags, {})
 
 -- This is your opts table
 require("telescope").setup {
+  defaults = {
+    path_display = { "smart" } 
+  },
   extensions = {
     ["ui-select"] = {
       require("telescope.themes").get_dropdown {
