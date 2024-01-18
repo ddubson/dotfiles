@@ -18,6 +18,8 @@ ln -s <root-dir/lua/ $HOME/.config/nvim/
 
 Run `:PackerSync` to synchronize all plugins
 
+Run `:checkhealth` to get a reading on if plugins were installed successfully.
+
 ## tmux
 
 ### Requirements
