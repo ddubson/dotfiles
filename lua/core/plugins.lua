@@ -12,8 +12,13 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+  -- Packer plugin manager
   use 'wbthomason/packer.nvim'
+
+  -- Catppuccin theme
   use { 'catppuccin/nvim', as = 'catppuccin' }
+
+  -- nvim-tree nav panel
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
