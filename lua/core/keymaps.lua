@@ -21,12 +21,11 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Telescope keymaps
 local telescope = require('telescope.builtin')
-
 vim.keymap.set('n', '<c-p>', telescope.find_files, {})
-vim.keymap.set('n', '<Space><Space>', telescope.oldfiles, {})
-vim.keymap.set('n', '<Space>g', telescope.live_grep, {})
-vim.keymap.set('n', '<Space>b', telescope.buffers, {})
-vim.keymap.set('n', '<Space>h', telescope.help_tags, {})
+vim.keymap.set('n', '<leader><leader>', telescope.oldfiles, {})
+vim.keymap.set('n', '<leader>g', telescope.live_grep, {})
+vim.keymap.set('n', '<leader>b', telescope.buffers, {})
+vim.keymap.set('n', '<leader>h', telescope.help_tags, {})
 -- End Telescope keymaps
 
 -- nvim-tree keymaps
