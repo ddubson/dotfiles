@@ -62,6 +62,9 @@ return require('packer').startup(function(use)
   -- Smooth scroll
   use 'terryma/vim-smooth-scroll'
 
+  -- Fancy start page
+  use 'mhinz/vim-startify'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
