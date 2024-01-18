@@ -31,3 +31,9 @@ vim.keymap.set('n', '<leader>h', telescope.help_tags, {})
 -- nvim-tree keymaps
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
 -- End nvim-tree keymaps
+
+-- Smooth scroll plugin -- https://github.com/terryma/vim-smooth-scroll
+vim.keymap.set('n', '<c-d>', ':call smooth_scroll#down(&scroll, 4, 2)<CR>')
+vim.keymap.set('n', '<c-d>', ':call smooth_scroll#down(&scroll, 4, 2)<CR>')
+vim.keymap.set('n', '<c-f>', ':call smooth_scroll#down(&scroll*2, 4, 8)<CR>')
+vim.keymap.set('n', '<c-b>', ':call smooth_scroll#up(&scroll*2, 4, 8)<CR>')

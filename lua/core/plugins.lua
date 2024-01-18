@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { { 'nvim-lua/plenary.nvim' } } }
   use 'nvim-telescope/telescope-ui-select.nvim'
 
+  -- Smooth scroll
+  use 'terryma/vim-smooth-scroll'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
