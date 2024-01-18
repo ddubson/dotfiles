@@ -11,9 +11,18 @@ Install NeoVim first on your machine.
 
 NeoVim can be configured with config files symlinked like so:
 
-```
+Bash:
+
+```bash
 ln -s <root-dir>/init.lua $HOME/.config/nvim/
 ln -s <root-dir/lua/ $HOME/.config/nvim/
+```
+
+PowerShell:
+
+```powershell
+sudo New-Item -Path ~\AppData\Local\nvim\init.lua -ItemType SymbolicLink -Value <workspace-dir>\dotfiles\init.lua
+sudo New-Item -Path ~\AppData\Local\nvim\lua -ItemType SymbolicLink -Value <workspace-dir>\dotfiles\lua
 ```
 
 Run `:PackerSync` to synchronize all plugins
